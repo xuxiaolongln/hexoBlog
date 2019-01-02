@@ -88,13 +88,17 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Andres的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。 在开始介绍颜色渐变动画之前，需要了解一个方法，将UIColor转换成RGBColor，因为我们如果要做渐变动画，需要使用RGB来做。 1234567891011121314151617/** 将UIColor转">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UIColor随手势渐变动画实现">
+<meta property="og:url" content="http://yoursite.com/2018/12/29/UIColor随手势渐变动画实现/index.html">
 <meta property="og:site_name" content="Andres的博客">
+<meta property="og:description" content="在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。 在开始介绍颜色渐变动画之前，需要了解一个方法，将UIColor转换成RGBColor，因为我们如果要做渐变动画，需要使用RGB来做。 1234567891011121314151617/** 将UIColor转">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-12-29T06:44:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Andres的博客">
+<meta name="twitter:title" content="UIColor随手势渐变动画实现">
+<meta name="twitter:description" content="在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。 在开始介绍颜色渐变动画之前，需要了解一个方法，将UIColor转换成RGBColor，因为我们如果要做渐变动画，需要使用RGB来做。 1234567891011121314151617/** 将UIColor转">
 
 
 
@@ -124,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/">
+  <link rel="canonical" href="http://yoursite.com/2018/12/29/UIColor随手势渐变动画实现/">
 
 
 
 
 
-  <title>Andres的博客</title>
+  <title>UIColor随手势渐变动画实现 | Andres的博客</title>
   
 
 
@@ -159,8 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <a href="https://github.com/xuxiaolongln"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
@@ -295,9 +298,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -327,9 +330,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/12/29/UIColor随手势渐变动画实现/" itemprop="url">UIColor随手势渐变动画实现</a></h1>
+          <h1 class="post-title" itemprop="name headline">UIColor随手势渐变动画实现</h1>
         
 
         <div class="post-meta">
@@ -379,9 +380,7 @@
       
 
       
-        
-          
-            <h4 id="在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。"><a href="#在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。" class="headerlink" title="在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。"></a>在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。</h4><ul>
+        <h4 id="在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。"><a href="#在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。" class="headerlink" title="在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。"></a>在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。</h4><ul>
 <li><p>在开始介绍颜色渐变动画之前，需要了解一个方法，将UIColor转换成RGBColor，因为我们如果要做渐变动画，需要使用RGB来做。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">/** 将UIColor转换成RGBColor */</span><br><span class="line">- (void)getRGBComponents:(CGFloat [3])components forColor:(UIColor *)color&#123;</span><br><span class="line">    CGColorSpaceRef rgbColorSpac = CGColorSpaceCreateDeviceRGB();</span><br><span class="line">    unsigned char resultingPixel[4];</span><br><span class="line">    CGContextRef context = CGBitmapContextCreate(&amp;resultingPixel, 1, 1, 8, 4, rgbColorSpac, kCGImageAlphaNoneSkipLast);</span><br><span class="line">    CGContextSetFillColorWithColor(context, [color CGColor]);</span><br><span class="line">    CGContextFillRect(context, CGRectMake(0, 0, 1, 1));</span><br><span class="line">    CGContextRelease(context);</span><br><span class="line">    CGColorSpaceRelease(rgbColorSpac);</span><br><span class="line">    for (int compont = 0; compont &lt; 3; compont++) &#123;</span><br><span class="line">        components[compont] = resultingPixel[compont] / 255.0f;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">//具体的使用方法</span><br><span class="line">CGFloat componts[3];</span><br><span class="line">[self getRGBComponents:componts forColor:[UIColor blackColor]];</span><br><span class="line">NSLog(@&quot;%f %f %f&quot;, componts[0], componts[1], componts[2]);</span><br></pre></td></tr></table></figure>
 </li>
@@ -390,8 +389,6 @@
 </li>
 </ul>
 <h4 id="以上就完成了整个颜色渐变的过程"><a href="#以上就完成了整个颜色渐变的过程" class="headerlink" title="以上就完成了整个颜色渐变的过程"></a>以上就完成了整个颜色渐变的过程</h4>
-          
-        
       
     </div>
     
@@ -399,6 +396,13 @@
     
 
     <div>
+        
+        <div>
+
+<div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+
+</div>
+
         
     </div>
 
@@ -412,12 +416,24 @@
       
 
       
+      
+        <div class="post-widgets">
+        
+          <div class="wp_rating">
+            <div id="wpac-rating"></div>
+          </div>
+        
+
+        
+
+        
+        </div>
+      
+      
 
       
 
       
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -427,10 +443,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -438,6 +455,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -458,8 +479,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -529,6 +559,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。"><span class="nav-number">1.</span> <span class="nav-text">在平常开发过程中，关于颜色的动画，只要使用UIView的animation方法就可以实现。但是有一种比较特殊的需求，就是颜色渐变效果的实现，颜色需要根据距离或者是手指拖动的范围来进行渐变。</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#以上就完成了整个颜色渐变的过程"><span class="nav-number">2.</span> <span class="nav-text">以上就完成了整个颜色渐变的过程</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -689,6 +735,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -744,6 +794,23 @@
 
   
   
+  <script type="text/javascript">
+  wpac_init = window.wpac_init || [];
+  wpac_init.push({widget: 'Rating', id: ,
+    el: 'wpac-rating',
+    color: 'f79533'
+  });
+  (function() {
+    if ('WIDGETPACK_LOADED' in window) return;
+    WIDGETPACK_LOADED = true;
+    var mc = document.createElement('script');
+    mc.type = 'text/javascript';
+    mc.async = true;
+    mc.src = '//embed.widgetpack.com/widget.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+  })();
+  </script>
+
 
   
 

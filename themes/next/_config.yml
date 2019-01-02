@@ -35,7 +35,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Hexo, Andres"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -126,10 +126,10 @@ scheme: Pisces
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
-  #Google: https://plus.google.com/yourname || google
+social:
+  GitHub: https://github.com/yourname || github
+  E-Mail: mailto:yourname@gmail.com || envelope
+  Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
@@ -194,7 +194,7 @@ sidebar:
   b2t: false
 
   # Scroll percent label in b2t button.
-  scrollpercent: false
+  scrollpercent: true
 
   # Enable sidebar on narrow view (only for Muse | Mist).
   onmobile: false
@@ -280,6 +280,7 @@ custom_logo:
 highlight_theme: normal
 
 
+
 # ---------------------------------------------------------------
 # Font Settings
 # - Find fonts on Google Fonts (https://www.google.com/fonts)
@@ -353,7 +354,7 @@ han: false
 #swiftype_key:
 
 # Baidu Analytics ID
-#baidu_analytics:
+baidu_analytics: 5beceee08153dd410cf6c9f7cbe33a83
 
 # Duoshuo ShortName
 #duoshuo_shortname:
@@ -523,9 +524,9 @@ vkontakte_api:
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
 rating:
-  enable: false
+  enable: true
   id:     #<app_id>
-  color:  fc6423
+  color:  f79533
 # ---------------------------------------------------------------
 
 # Show number of visitors to each article.
